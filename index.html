@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BelajarKu - Platform Belajar Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="logo"> BelajarKu</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Fitur</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>  Belajar Lebih Mudah & Menyenangkan</h1>
+    <p>BelajarKu adalah platform edukasi digital yang membantu belajar kapan saja dan di mana saja dengan cara yang menarik.</p>
+    <a href="contact.html" class="btn">Mulai Gratis Sekarang</a>
+  </section>
+
+  <!-- FITUR SINGKAT -->
+  <section class="section">
+    <h2>Mengapa BelajarKu?</h2>
+    <p class="sub">Dirancang untuk pelajar Indonesia yang mau berkembang.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon"></div>
+        <h3>Materi Terstruktur</h3>
+        <p>Kurikulum yang sudah tersusun rapi untuk setiap level.</p>
+      </div>
+      <div class="card">
+        <div class="icon"></div>
+        <h3>Bisa di HP</h3>
+        <p>Akses dari mana saja menggunakan perangkat apapun.</p>
+      </div>
+      <div class="card">
+        <div class="icon"></div>
+        <h3>Sertifikat Resmi</h3>
+        <p>Dapatkan sertifikat setelah menyelesaikan kursus.</p>
+      </div>
+      <div class="card">
+        <div class="icon"></div>
+        <h3>Mentor Aktif</h3>
+        <p>Diskusi langsung dengan mentor berpengalaman.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 BelajarKu. All rights reserved.</p>
+  </footer>
+
+  <!-- BONUS: POPUP JAVASCRIPT -->
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        const popup = confirm(
+          " Promo Spesial! Daftar sekarang dan dapatkan DISKON 50% untuk bulan pertama!\n\nKlik OK untuk daftar sekarang."
+        );
+        if (popup) {
+          window.location.href = "contact.html";
+        }
+      }, 1500);
+    };
+  </script>
+
+</body>
+</html>
