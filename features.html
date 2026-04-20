@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitur - BelajarKu</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- INTERNAL CSS (sesuai ketentuan tugas) -->
+  <style>
+    .feature-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .feat-item {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      width: 240px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.09);
+      transition: transform 0.2s;
+      text-align: center;
+    }
+
+    .feat-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .feat-img {
+      width: 100%;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+    }
+
+    .feat-item h3 {
+      font-size: 0.95rem;
+      padding: 12px 14px 4px;
+      color: #1a73e8;
+    }
+
+    .feat-item p {
+      font-size: 0.82rem;
+      color: #666;
+      padding: 0 14px 16px;
+    }
+
+    .video-section {
+      background: #f0f4ff;
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: 1.7rem;
+      color: #1a73e8;
+      margin-bottom: 10px;
+    }
+
+    .video-section p {
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .video-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .video-wrap iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      display: block;
+    }
+
+    .bg-1 { background-color: #e8f4fd; }
+    .bg-2 { background-color: #fef3e2; }
+    .bg-3 { background-color: #e8f8f0; }
+    .bg-4 { background-color: #f3e8ff; }
+    .bg-5 { background-color: #fde8e8; }
+    .bg-6 { background-color: #e8eeff; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="logo"> BelajarKu</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Fitur</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Fitur Unggulan</h1>
+    <p>Semua yang kamu butuhkan untuk belajar ada di sini.</p>
+  </div>
+
+  <!-- GALLERY FITUR -->
+  <div class="feature-gallery">
+    <div class="feat-item">
+      <div class="feat-img bg-1">      <img style="width: 100px; height: 100px;" src="Video.png" alt="Logo Video">
+      </div>
+      <h3>Video Interaktif</h3>
+      <p>Tonton materi kapan saja dalam format video berkualitas HD.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-img bg-2">      <img style="width: 100px; height: 100px;" src="Quiz.png" alt="Logo Quiz">
+      </div>
+      <h3>Kuis & Latihan</h3>
+      <p>Uji pemahamanmu dengan kuis interaktif setelah belajar.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-img bg-3">      <img style="width: 100px; height: 100px;" src="Certificate.png" alt="Logo Certificate">
+      </div>
+      <h3>Sertifikat Digital</h3>
+      <p>Unduh sertifikat resmi setelah menyelesaikan kursus.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-img bg-4"><img style="width: 100px; height: 100px;" src="Forum.png" alt="Logo Forum">
+      </div>
+      <h3>Forum Diskusi</h3>
+      <p>Berdiskusi dengan sesama pelajar dan mentor kapan saja.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-img bg-5">      <img style="width: 100px; height: 100px;" src="Progress.png" alt="Logo Progress">
+      </div>
+      <h3>Progress Tracker</h3>
+      <p>Pantau perkembangan belajarmu dengan grafik yang jelas.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-img bg-6">
+      <img style="width: 100px; height: 100px;" src="Offline.png" alt="Logo Offline">
+      </div>
+      <h3>Akses Offline</h3>
+      <p>Download materi dan belajar tanpa koneksi internet.</p>
+    </div>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <div class="video-section">
+    <h2>Video Pembelajaran</h2>
+    <p>Lihat contoh materi pembelajaran yang tersedia di BelajarKu.</p>
+    <div class="video-wrap">
+      <!-- Video YouTube embed contoh materi belajar -->
+      <iframe
+        src="ALJABAR.mp4"
+        title="Video Pembelajaran BelajarKu"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 BelajarKu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
