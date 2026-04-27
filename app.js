@@ -1,23 +1,9 @@
-/**
- * app.js — Shared JavaScript untuk Tech Community Website
- * Data disimpan sementara dalam array (tanpa database)
- */
 
-// ═══════════════════════════════════════════════════════════
-//  MEMBER DATA ARRAY (simulasi penyimpanan sementara)
-// ═══════════════════════════════════════════════════════════
 
 const members = [
   { name: 'Arif Budiman',    email: 'arif.budiman@email.com',   interest: 'Web Development',      status: 'Aktif' },
   { name: 'Bintang Kusuma',  email: 'bintang.k@email.com',      interest: 'Artificial Intelligence', status: 'Aktif' },
-  { name: 'Citra Dewi',      email: 'citra.dewi@email.com',     interest: 'UI/UX Design',          status: 'Aktif' },
-  { name: 'Dimas Pratama',   email: 'dimas.p@email.com',        interest: 'Cybersecurity',         status: 'Aktif' },
-  { name: 'Eva Maharani',    email: 'eva.maha@email.com',       interest: 'Mobile Development',   status: 'Aktif' },
-  { name: 'Fajar Ramadhan',  email: 'fajar.r@email.com',        interest: 'Cloud Computing',       status: 'Aktif' },
-  { name: 'Gilang Saputra',  email: 'gilang.s@email.com',       interest: 'Data Science',          status: 'Aktif' },
-  { name: 'Hana Putri',      email: 'hana.putri@email.com',     interest: 'Game Development',      status: 'Tidak Aktif' },
-  { name: 'Irfan Hakim',     email: 'irfan.h@email.com',        interest: 'Blockchain',            status: 'Aktif' },
-  { name: 'Jasmine Aulia',   email: 'jasmine.a@email.com',      interest: 'Web Development',      status: 'Aktif' },
+  
 ];
 
 /**
@@ -30,13 +16,7 @@ function addMember(name, email, interest) {
   members.push({ name, email, interest, status: 'Baru' });
 }
 
-// ═══════════════════════════════════════════════════════════
-//  RENDER TABLE (digunakan di index.html)
-// ═══════════════════════════════════════════════════════════
 
-/**
- * Render tabel anggota
- * @param {string} [filter=''] - kata kunci pencarian
  */
 function renderTable(filter = '') {
   const tbody = document.getElementById('memberTbody');
