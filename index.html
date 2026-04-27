@@ -2,76 +2,206 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Community - Platform Belajar Online</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <a href="index.html" class="logo"> Tech Community</a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Fitur</a></li>
-      <li><a href="form.html">Kontak</a></li>
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="tc-nav">
+    <div class="tc-nav__brand">
+      <span class="brand-icon">⬡</span> Tech<span class="accent">Community</span>
+    </div>
+    <ul class="tc-nav__links">
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./form.html">Daftar</a></li>
+      <li><a href="./gallery.html">Galeri</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>  Belajar Lebih Mudah & Menyenangkan</h1>
-    <p>BelajarKu adalah platform edukasi digital yang membantu belajar kapan saja dan di mana saja dengan cara yang menarik.</p>
-    <a href="contact.html" class="btn">Mulai Gratis Sekarang</a>
-  </section>
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <header class="tc-hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="container position-relative z-1 text-center py-5">
+      <p class="hero-eyebrow">Selamat Datang di</p>
+      <h1 class="hero-title">Tech<span class="accent">Community</span></h1>
+      <p class="hero-sub">
+        Komunitas teknologi yang menghubungkan para pengembang, desainer, dan inovator Indonesia.
+        Belajar bersama, tumbuh bersama.
+      </p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+        <a href="./form.html" class="btn-tc-primary">Bergabung Sekarang</a>
+        <a href="./gallery.html" class="btn-tc-ghost">Lihat Galeri</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- FITUR SINGKAT -->
-  <section class="section">
-    <h2>Mengapa Tech Community?</h2>
-    <p class="sub">Dirancang untuk pelajar Indonesia yang mau berkembang.</p>
-    <div class="cards">
-      <div class="card">
-        <div class="icon"></div>
-        <h3>Materi Terstruktur</h3>
-        <p>Kurikulum yang sudah tersusun rapi untuk setiap level.</p>
-      </div>
-      <div class="card">
-        <div class="icon"></div>
-        <h3>Bisa di HP</h3>
-        <p>Akses dari mana saja menggunakan perangkat apapun.</p>
-      </div>
-      <div class="card">
-        <div class="icon"></div>
-        <h3>Sertifikat Resmi</h3>
-        <p>Dapatkan sertifikat setelah menyelesaikan kursus.</p>
-      </div>
-      <div class="card">
-        <div class="icon"></div>
-        <h3>Mentor Aktif</h3>
-        <p>Diskusi langsung dengan mentor berpengalaman.</p>
+  <!-- ─── STATS ─────────────────────────────────────────────── -->
+  <section class="tc-stats">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <span class="stat-num" id="counter1">0</span>
+            <span class="stat-label">Anggota Aktif</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <span class="stat-num" id="counter2">0</span>
+            <span class="stat-label">Event Tahunan</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <span class="stat-num" id="counter3">0</span>
+            <span class="stat-label">Proyek Kolaborasi</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <span class="stat-num" id="counter4">0</span>
+            <span class="stat-label">Kota Bergabung</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Tech Community. All rights reserved.</p>
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section class="tc-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="section-eyebrow">Tentang Kami</p>
+          <h2 class="section-title">Membangun Ekosistem <span class="accent">Teknologi</span> Indonesia</h2>
+          <p class="section-text">
+            Tech Community adalah wadah bagi individu-individu yang bersemangat di dunia teknologi.
+            Kami percaya bahwa kolaborasi dan berbagi pengetahuan adalah kunci untuk mendorong
+            inovasi yang nyata.
+          </p>
+          <p class="section-text">
+            Dari web development, mobile apps, AI/ML, hingga cybersecurity — semua bidang
+            disambut dengan tangan terbuka di komunitas ini.
+          </p>
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <div class="feature-chip">🚀 Inovasi</div>
+            <div class="feature-chip">🤝 Kolaborasi</div>
+            <div class="feature-chip">📚 Belajar</div>
+            <div class="feature-chip">🌐 Komunitas</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-visual">
+            <div class="av-ring av-ring--1"></div>
+            <div class="av-ring av-ring--2"></div>
+            <div class="av-ring av-ring--3"></div>
+            <div class="av-core">TC</div>
+            <div class="av-dot" style="--a:0deg">💻</div>
+            <div class="av-dot" style="--a:60deg">📱</div>
+            <div class="av-dot" style="--a:120deg">🤖</div>
+            <div class="av-dot" style="--a:180deg">🔐</div>
+            <div class="av-dot" style="--a:240deg">☁️</div>
+            <div class="av-dot" style="--a:300deg">🎨</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MEMBER TABLE ─────────────────────────────────────── -->
+  <section class="tc-section tc-section--alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Data Anggota</p>
+        <h2 class="section-title">Anggota <span class="accent">Komunitas</span></h2>
+        <p class="section-text mx-auto" style="max-width:520px">
+          Berikut adalah daftar sebagian anggota aktif Tech Community yang telah bergabung.
+        </p>
+      </div>
+
+      <div class="tc-table-wrapper">
+        <div class="table-toolbar">
+          <input type="text" id="searchInput" class="tc-search" placeholder="🔍  Cari anggota..."/>
+          <span class="table-count" id="tableCount"></span>
+        </div>
+        <div class="table-responsive">
+          <table class="tc-table" id="memberTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Bidang Minat</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="memberTbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="./form.html" class="btn-tc-primary">+ Tambah Anggota Baru</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ─────────────────────────────────────────────────── -->
+  <section class="tc-cta">
+    <div class="container text-center">
+      <h2 class="cta-title">Siap Bergabung?</h2>
+      <p class="cta-sub">Jadilah bagian dari komunitas tech terbaik di Indonesia.</p>
+      <a href="./form.html" class="btn-tc-primary mt-3">Daftar Sekarang →</a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────── -->
+  <footer class="tc-footer">
+    <div class="container text-center">
+      <p class="mb-1"><span class="brand-icon">⬡</span> Tech<span class="accent">Community</span></p>
+      <p class="footer-sub">© 2026 TechCommunity. Dibuat dengan ❤️ untuk komunitas Indonesia.</p>
+    </div>
   </footer>
 
-  <!-- BONUS: POPUP JAVASCRIPT -->
+  <script src="./app.js"></script>
   <script>
-    window.onload = function () {
-      setTimeout(function () {
-        const popup = confirm(
-          " Promo Spesial! Daftar sekarang dan dapatkan DISKON 50% untuk bulan pertama!\n\nKlik OK untuk daftar sekarang."
-        );
-        if (popup) {
-          window.location.href = "contact.html";
-        }
-      }, 1500);
-    };
-  </script>
+    // ── Init member table ───────────────────────────────────────
+    renderTable();
 
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function () {
+      renderTable(this.value.toLowerCase());
+    });
+
+    // ── Counter animation ───────────────────────────────────────
+    function animateCounter(id, target, suffix='') {
+      let current = 0;
+      const step = Math.ceil(target / 60);
+      const el = document.getElementById(id);
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = current.toLocaleString('id-ID') + suffix;
+        if (current >= target) clearInterval(timer);
+      }, 25);
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animateCounter('counter1', 1240, '+');
+          animateCounter('counter2', 36, '');
+          animateCounter('counter3', 87, '');
+          animateCounter('counter4', 12, '');
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(document.querySelector('.tc-stats'));
+  </script>
 </body>
 </html>
