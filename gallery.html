@@ -1,175 +1,451 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fitur - Tech Community</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- INTERNAL CSS (sesuai ketentuan tugas) -->
-  <style>
-    .feature-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      justify-content: center;
-      padding: 40px;
-    }
-
-    .feat-item {
-      background: #fff;
-      border-radius: 14px;
-      overflow: hidden;
-      width: 240px;
-      box-shadow: 0 2px 14px rgba(0,0,0,0.09);
-      transition: transform 0.2s;
-      text-align: center;
-    }
-
-    .feat-item:hover {
-      transform: translateY(-5px);
-    }
-
-    .feat-img {
-      width: 100%;
-      height: 130px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3.5rem;
-    }
-
-    .feat-item h3 {
-      font-size: 0.95rem;
-      padding: 12px 14px 4px;
-      color: #1a73e8;
-    }
-
-    .feat-item p {
-      font-size: 0.82rem;
-      color: #666;
-      padding: 0 14px 16px;
-    }
-
-    .video-section {
-      background: #f0f4ff;
-      padding: 50px 40px;
-      text-align: center;
-    }
-
-    .video-section h2 {
-      font-size: 1.7rem;
-      color: #1a73e8;
-      margin-bottom: 10px;
-    }
-
-    .video-section p {
-      color: #555;
-      margin-bottom: 24px;
-    }
-
-    .video-wrap {
-      max-width: 640px;
-      margin: 0 auto;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }
-
-    .video-wrap iframe {
-      width: 100%;
-      height: 360px;
-      border: none;
-      display: block;
-    }
-
-    .bg-1 { background-color: #e8f4fd; }
-    .bg-2 { background-color: #fef3e2; }
-    .bg-3 { background-color: #e8f8f0; }
-    .bg-4 { background-color: #f3e8ff; }
-    .bg-5 { background-color: #fde8e8; }
-    .bg-6 { background-color: #e8eeff; }
-  </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri Multimedia — Tech Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <a href="index.html" class="logo"> Tech Community</a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="features.html">Fitur</a></li>
-      <li><a href="contact.html">Kontak</a></li>
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="tc-nav">
+    <div class="tc-nav__brand">
+      <span class="brand-icon">⬡</span> Tech<span class="accent">Community</span>
+    </div>
+    <ul class="tc-nav__links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./form.html">Daftar</a></li>
+      <li><a href="./gallery.html" class="active">Galeri</a></li>
     </ul>
   </nav>
 
-  <!-- PAGE HERO -->
+  <!-- ─── PAGE HERO ─────────────────────────────────────── -->
   <div class="page-hero">
-    <h1>Fitur Unggulan</h1>
-    <p>Semua yang kamu butuhkan untuk belajar ada di sini.</p>
-  </div>
-
-  <!-- GALLERY FITUR -->
-  <div class="feature-gallery">
-    <div class="feat-item">
-      <div class="feat-img bg-1"><img style="width: 100px; height: 100px;" src="Vide1.png" alt="Logo Video">
-      </div>
-      <h3>Video Interaktif</h3>
-      <p>Tonton materi kapan saja dalam format video berkualitas HD.</p>
-    </div>
-    <div class="feat-item">
-      <div class="feat-img bg-2">      <img style="width: 100px; height: 100px;" src="Quiz.png" alt="Logo Quiz">
-      </div>
-      <h3>Kuis & Latihan</h3>
-      <p>Uji pemahamanmu dengan kuis interaktif setelah belajar.</p>
-    </div>
-    <div class="feat-item">
-      <div class="feat-img bg-3">      <img style="width: 100px; height: 100px;" src="Certificate.png" alt="Logo Certificate">
-      </div>
-      <h3>Sertifikat Digital</h3>
-      <p>Unduh sertifikat resmi setelah menyelesaikan kursus.</p>
-    </div>
-    <div class="feat-item">
-      <div class="feat-img bg-4"><img style="width: 100px; height: 100px;" src="Forum.png" alt="Logo Forum">
-      </div>
-      <h3>Forum Diskusi</h3>
-      <p>Berdiskusi dengan sesama pelajar dan mentor kapan saja.</p>
-    </div>
-    <div class="feat-item">
-      <div class="feat-img bg-5">      <img style="width: 100px; height: 100px;" src="Progress.png" alt="Logo Progress">
-      </div>
-      <h3>Progress Tracker</h3>
-      <p>Pantau perkembangan belajarmu dengan grafik yang jelas.</p>
-    </div>
-    <div class="feat-item">
-      <div class="feat-img bg-6">
-      <img style="width: 100px; height: 100px;" src="Offline.png" alt="Logo Offline">
-      </div>
-      <h3>Akses Offline</h3>
-      <p>Download materi dan belajar tanpa koneksi internet.</p>
+    <div class="hero-grid-bg"></div>
+    <div class="container position-relative z-1 py-5 text-center">
+      <p class="hero-eyebrow">Eksplorasi</p>
+      <h1 class="hero-title" style="font-size: clamp(2rem,5vw,3.5rem);">Galeri <span class="accent">Multimedia</span></h1>
+      <p class="hero-sub">Foto, video, dan audio inspiratif dari Tech Community</p>
     </div>
   </div>
 
-  <!-- VIDEO SECTION -->
-  <div class="video-section">
-    <h2>Video Pembelajaran</h2>
-    <p>Lihat contoh materi pembelajaran yang tersedia di Tech Community.</p>
-    <div class="video-wrap">
-      <!-- Video YouTube embed contoh materi belajar -->
-      <iframe
-        src="ALJABAR.mp4"
-        title="Video Pembelajaran Tech Community"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+  <!-- ─── IMAGE GALLERY ────────────────────────────────── -->
+  <section class="tc-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Foto</p>
+        <h2 class="section-title">Galeri <span class="accent">Foto</span></h2>
+      </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Tech Community. All rights reserved.</p>
+      <!-- Main image viewer -->
+      <div class="img-viewer-wrapper">
+        <div class="img-viewer" id="imgViewer">
+          <img id="mainImg" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80"
+               alt="Tech Image" class="main-img"/>
+          <div class="img-overlay" id="imgOverlay">
+            <p id="imgCaption">Circuit Board — Fondasi dari semua teknologi modern</p>
+          </div>
+          <button class="img-nav img-nav--left" onclick="changeImg(-1)">‹</button>
+          <button class="img-nav img-nav--right" onclick="changeImg(1)">›</button>
+          <div class="img-counter" id="imgCounter">1 / 5</div>
+        </div>
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="thumb-strip" id="thumbStrip"></div>
+
+      <!-- Info button -->
+      <div class="text-center mt-3">
+        <button class="btn-tc-ghost" onclick="showImgInfo()">ℹ️ Lihat Info Gambar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VIDEO ────────────────────────────────────────── -->
+  <section class="tc-section tc-section--alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Video</p>
+        <h2 class="section-title">Video <span class="accent">Teknologi</span></h2>
+        <p class="section-text mx-auto" style="max-width:520px">
+          Tonton video inspiratif seputar dunia teknologi dan pengembangan software.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Main video -->
+        <div class="col-lg-8">
+          <div class="tc-card video-card">
+            <div class="video-wrapper">
+              <iframe
+                id="mainVideo"
+                src="https://www.youtube.com/embed/Tn6-PIqc4UM?rel=0"
+                title="Tech Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-meta">
+              <span class="video-badge">🎬 Featured</span>
+              <h3 id="videoTitle" class="video-title">What Is Programming? 🤔</h3>
+              <p id="videoDesc" class="video-desc">Kenalan dengan dunia programming dan bagaimana kode bisa mengubah dunia.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="col-lg-4">
+          <div class="tc-card playlist-card">
+            <h4 class="playlist-title">📋 Playlist</h4>
+            <div id="playlistItems"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── AUDIO ────────────────────────────────────────── -->
+  <section class="tc-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Audio</p>
+        <h2 class="section-title">Podcast <span class="accent">Tech</span></h2>
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-8">
+          <div class="tc-card audio-player-card">
+
+            <!-- Waveform visual -->
+            <div class="waveform-visual" id="waveform">
+              <div class="waveform-bars" id="waveformBars"></div>
+            </div>
+
+            <!-- Track info -->
+            <div class="audio-track-info">
+              <div class="track-art">🎙️</div>
+              <div>
+                <h4 class="track-title" id="trackTitle">Future of AI — Episode 1</h4>
+                <p class="track-sub" id="trackSub">Tech Community Podcast • 2026</p>
+              </div>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="audio-progress-wrap">
+              <span class="time-label" id="timeCurrent">0:00</span>
+              <div class="audio-progress-bg" onclick="seekAudio(event)" id="progressBg">
+                <div class="audio-progress-fill" id="progressFill"></div>
+              </div>
+              <span class="time-label" id="timeDuration">0:00</span>
+            </div>
+
+            <!-- Hidden audio element -->
+            <audio id="audioPlayer"
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              preload="metadata">
+            </audio>
+
+            <!-- Controls -->
+            <div class="audio-controls">
+              <button class="audio-btn" onclick="prevTrack()" title="Previous">⏮</button>
+              <button class="audio-btn" onclick="rewindAudio()" title="-10s">↺</button>
+              <button class="audio-btn audio-btn--play" id="btnPlayPause" onclick="togglePlay()">▶</button>
+              <button class="audio-btn" onclick="forwardAudio()" title="+10s">↻</button>
+              <button class="audio-btn" onclick="nextTrack()" title="Next">⏭</button>
+            </div>
+
+            <!-- Volume -->
+            <div class="volume-row">
+              <span>🔈</span>
+              <input type="range" id="volumeSlider" class="volume-slider"
+                     min="0" max="1" step="0.05" value="0.7"
+                     oninput="setVolume(this.value)"/>
+              <span>🔊</span>
+              <span class="vol-label" id="volLabel">70%</span>
+            </div>
+
+            <!-- Track list -->
+            <div class="track-list" id="trackList"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────── -->
+  <footer class="tc-footer">
+    <div class="container text-center">
+      <p class="mb-1"><span class="brand-icon">⬡</span> Tech<span class="accent">Community</span></p>
+      <p class="footer-sub">© 2026 TechCommunity. Dibuat dengan ❤️ untuk komunitas Indonesia.</p>
+    </div>
   </footer>
 
+  <script src="./app.js"></script>
+  <script>
+    // ═══════════════════════════════════════════════════
+    //  IMAGE GALLERY
+    // ═══════════════════════════════════════════════════
+    const images = [
+      {
+        src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80',
+        thumb: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&q=60',
+        caption: 'Circuit Board — Fondasi dari semua teknologi modern',
+        tag: 'Hardware'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80',
+        thumb: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&q=60',
+        caption: 'Coding Session — Setiap baris kode adalah sebuah solusi',
+        tag: 'Software'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1488229297570-58520851e868?w=900&q=80',
+        thumb: 'https://images.unsplash.com/photo-1488229297570-58520851e868?w=200&q=60',
+        caption: 'Network & Connectivity — Dunia yang terhubung tanpa batas',
+        tag: 'Network'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=900&q=80',
+        thumb: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=200&q=60',
+        caption: 'Robotics & AI — Teknologi yang belajar dan berkembang',
+        tag: 'AI/Robotics'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80',
+        thumb: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=200&q=60',
+        caption: 'Tech Workspace — Tempat ide-ide besar lahir',
+        tag: 'Workspace'
+      }
+    ];
+
+    let currentImg = 0;
+
+    function buildThumbs() {
+      const strip = document.getElementById('thumbStrip');
+      images.forEach((img, i) => {
+        const el = document.createElement('div');
+        el.className = 'thumb-item' + (i === 0 ? ' active' : '');
+        el.innerHTML = `<img src="${img.thumb}" alt="thumb ${i+1}"/><span class="thumb-tag">${img.tag}</span>`;
+        el.addEventListener('click', () => setImg(i));
+        strip.appendChild(el);
+      });
+    }
+
+    function setImg(idx) {
+      currentImg = (idx + images.length) % images.length;
+      const img = images[currentImg];
+      const mainImg = document.getElementById('mainImg');
+      mainImg.style.opacity = '0';
+      setTimeout(() => {
+        mainImg.src = img.src;
+        mainImg.alt = img.caption;
+        document.getElementById('imgCaption').textContent = img.caption;
+        document.getElementById('imgCounter').textContent = `${currentImg + 1} / ${images.length}`;
+        mainImg.style.opacity = '1';
+      }, 250);
+      document.querySelectorAll('.thumb-item').forEach((el, i) => {
+        el.classList.toggle('active', i === currentImg);
+      });
+    }
+
+    function changeImg(dir) {
+      setImg(currentImg + dir);
+    }
+
+    function showImgInfo() {
+      const img = images[currentImg];
+      alert(`📸 Informasi Gambar\n\nTag: ${img.tag}\nDeskripsi: ${img.caption}\nSumber: Unsplash (Free Stock Photo)`);
+    }
+
+    buildThumbs();
+
+    // ═══════════════════════════════════════════════════
+    //  VIDEO PLAYLIST
+    // ═══════════════════════════════════════════════════
+    const videos = [
+      {
+        embedId: 'Tn6-PIqc4UM',
+        title: 'What Is Programming? 🤔',
+        desc: 'Kenalan dengan dunia programming dan bagaimana kode bisa mengubah dunia.',
+        duration: '8:44'
+      },
+      {
+        embedId: 'zOjov-2OZ0E',
+        title: 'HTML in 100 Seconds',
+        desc: 'Pelajari HTML dalam waktu singkat bersama Fireship.',
+        duration: '1:46'
+      },
+      {
+        embedId: 'DHjqpvDnNGE',
+        title: 'CSS in 100 Seconds',
+        desc: 'Dasar-dasar CSS yang wajib kamu tahu sebagai web developer.',
+        duration: '1:48'
+      },
+      {
+        embedId: 'DHvZLI7Db8E',
+        title: 'JavaScript in 100 Seconds',
+        desc: 'Pengenalan JavaScript — bahasa pemrograman paling populer di dunia.',
+        duration: '1:51'
+      }
+    ];
+
+    let currentVideo = 0;
+
+    function buildPlaylist() {
+      const container = document.getElementById('playlistItems');
+      videos.forEach((v, i) => {
+        const el = document.createElement('div');
+        el.className = 'playlist-item' + (i === 0 ? ' active' : '');
+        el.innerHTML = `
+          <div class="pl-thumb">▶</div>
+          <div class="pl-info">
+            <p class="pl-title">${v.title}</p>
+            <span class="pl-duration">${v.duration}</span>
+          </div>
+        `;
+        el.addEventListener('click', () => setVideo(i));
+        container.appendChild(el);
+      });
+    }
+
+    function setVideo(idx) {
+      currentVideo = idx;
+      const v = videos[idx];
+      document.getElementById('mainVideo').src = `https://www.youtube.com/embed/${v.embedId}?rel=0&autoplay=1`;
+      document.getElementById('videoTitle').textContent = v.title;
+      document.getElementById('videoDesc').textContent = v.desc;
+      document.querySelectorAll('.playlist-item').forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+      });
+    }
+
+    buildPlaylist();
+
+    // ═══════════════════════════════════════════════════
+    //  AUDIO PLAYER
+    // ═══════════════════════════════════════════════════
+    const tracks = [
+      {
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+        title: 'Future of AI — Episode 1',
+        sub: 'Tech Community Podcast • 2026',
+        icon: '🎙️'
+      },
+      {
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+        title: 'Web Dev Trends — Episode 2',
+        sub: 'Tech Community Podcast • 2026',
+        icon: '🌐'
+      },
+      {
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
+        title: 'Mobile Revolution — Episode 3',
+        sub: 'Tech Community Podcast • 2026',
+        icon: '📱'
+      }
+    ];
+
+    let currentTrack = 0;
+    const audio = document.getElementById('audioPlayer');
+    let isPlaying = false;
+
+    // Build waveform bars
+    (function buildWaveform() {
+      const bars = document.getElementById('waveformBars');
+      for (let i = 0; i < 40; i++) {
+        const bar = document.createElement('div');
+        bar.className = 'wbar';
+        bar.style.animationDelay = (i * 0.05) + 's';
+        bars.appendChild(bar);
+      }
+    })();
+
+    // Build track list
+    function buildTrackList() {
+      const tl = document.getElementById('trackList');
+      tl.innerHTML = '';
+      tracks.forEach((t, i) => {
+        const el = document.createElement('div');
+        el.className = 'tl-item' + (i === currentTrack ? ' active' : '');
+        el.innerHTML = `<span>${t.icon}</span><span class="tl-title">${t.title}</span>`;
+        el.addEventListener('click', () => loadTrack(i));
+        tl.appendChild(el);
+      });
+    }
+
+    function loadTrack(idx) {
+      currentTrack = idx;
+      const t = tracks[idx];
+      audio.src = t.src;
+      document.getElementById('trackTitle').textContent = t.title;
+      document.getElementById('trackSub').textContent = t.sub;
+      document.querySelector('.track-art').textContent = t.icon;
+      buildTrackList();
+      if (isPlaying) { audio.play(); }
+    }
+
+    function togglePlay() {
+      if (isPlaying) {
+        audio.pause();
+        document.getElementById('btnPlayPause').textContent = '▶';
+        document.getElementById('waveformBars').classList.remove('playing');
+        isPlaying = false;
+      } else {
+        audio.play();
+        document.getElementById('btnPlayPause').textContent = '⏸';
+        document.getElementById('waveformBars').classList.add('playing');
+        isPlaying = true;
+      }
+    }
+
+    function rewindAudio() { audio.currentTime = Math.max(0, audio.currentTime - 10); }
+    function forwardAudio() { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 10); }
+
+    function prevTrack() { loadTrack((currentTrack - 1 + tracks.length) % tracks.length); }
+    function nextTrack() { loadTrack((currentTrack + 1) % tracks.length); }
+
+    function setVolume(v) {
+      audio.volume = v;
+      document.getElementById('volLabel').textContent = Math.round(v * 100) + '%';
+    }
+    audio.volume = 0.7;
+
+    function seekAudio(e) {
+      const bg = document.getElementById('progressBg');
+      const ratio = e.offsetX / bg.offsetWidth;
+      audio.currentTime = ratio * (audio.duration || 0);
+    }
+
+    function formatTime(s) {
+      if (isNaN(s)) return '0:00';
+      const m = Math.floor(s / 60);
+      const sec = Math.floor(s % 60).toString().padStart(2, '0');
+      return `${m}:${sec}`;
+    }
+
+    audio.addEventListener('timeupdate', () => {
+      const pct = audio.duration ? (audio.currentTime / audio.duration * 100) : 0;
+      document.getElementById('progressFill').style.width = pct + '%';
+      document.getElementById('timeCurrent').textContent = formatTime(audio.currentTime);
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      document.getElementById('timeDuration').textContent = formatTime(audio.duration);
+    });
+
+    audio.addEventListener('ended', () => {
+      nextTrack();
+      if (isPlaying) audio.play();
+    });
+
+    buildTrackList();
+  </script>
 </body>
 </html>
