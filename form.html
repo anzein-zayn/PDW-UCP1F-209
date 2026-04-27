@@ -67,7 +67,7 @@
               <!-- Email -->
               <div class="tc-field" id="field-email">
                 <label class="tc-label" for="inputEmail">
-                  <span class="label-icon">📧</span> Alamat Email
+                  <span class="label-icon"></span> Alamat Email
                 </label>
                 <input type="email" id="inputEmail" class="tc-input"
                        placeholder="nama@email.com" autocomplete="off"/>
@@ -77,20 +77,20 @@
               <!-- Interest -->
               <div class="tc-field" id="field-interest">
                 <label class="tc-label" for="inputInterest">
-                  <span class="label-icon">💡</span> Bidang Minat
+                  <span class="label-icon"></span> Bidang Minat
                 </label>
                 <div class="tc-select-wrapper">
                   <select id="inputInterest" class="tc-input tc-select">
                     <option value="" disabled selected>Pilih bidang minat...</option>
-                    <option value="Web Development">🌐 Web Development</option>
-                    <option value="Mobile Development">📱 Mobile Development</option>
-                    <option value="Artificial Intelligence">🤖 Artificial Intelligence</option>
-                    <option value="Cybersecurity">🔐 Cybersecurity</option>
-                    <option value="Cloud Computing">☁️ Cloud Computing</option>
-                    <option value="UI/UX Design">🎨 UI/UX Design</option>
-                    <option value="Data Science">📊 Data Science</option>
-                    <option value="Game Development">🎮 Game Development</option>
-                    <option value="IoT & Embedded Systems">⚙️ IoT & Embedded Systems</option>
+                    <option value="Web Development"> Web Development</option>
+                    <option value="Mobile Development"> Mobile Development</option>
+                    <option value="Artificial Intelligence"> Artificial Intelligence</option>
+                    <option value="Cybersecurity"> Cybersecurity</option>
+                    <option value="Cloud Computing"> Cloud Computing</option>
+                    <option value="UI/UX Design"> UI/UX Design</option>
+                    <option value="Data Science"> Data Science</option>
+                    <option value="Game Development"> Game Development</option>
+                    <option value="IoT & Embedded Systems"> IoT & Embedded Systems</option>
                     <option value="Blockchain">🔗 Blockchain</option>
                   </select>
                   <span class="select-arrow">▾</span>
@@ -111,7 +111,7 @@
               <!-- Submit -->
               <button id="btnSubmit" class="btn-tc-primary w-100 mt-2" onclick="handleSubmit()">
                 <span id="btnText">Kirim Pendaftaran →</span>
-                <span id="btnLoader" style="display:none">⏳ Memproses...</span>
+                <span id="btnLoader" style="display:none"> Memproses...</span>
               </button>
 
             </div><!-- /form-card__body -->
@@ -119,7 +119,7 @@
 
           <!-- Success Card (hidden) -->
           <div class="tc-card success-card d-none" id="successCard">
-            <div class="success-icon">✅</div>
+            <div class="success-icon"></div>
             <h2 class="success-title">Pendaftaran Berhasil!</h2>
             <p class="success-sub">Data kamu telah tersimpan. Selamat bergabung!</p>
             <div class="success-data" id="successData"></div>
@@ -149,21 +149,21 @@
                 </div>
               </li>
               <li>
-                <span class="benefit-icon">🤝</span>
+                <span class="benefit-icon"></span>
                 <div>
                   <strong>Networking</strong>
                   <p>Terhubung dengan sesama profesional teknologi</p>
                 </div>
               </li>
               <li>
-                <span class="benefit-icon">💼</span>
+                <span class="benefit-icon"></span>
                 <div>
                   <strong>Peluang Karier</strong>
                   <p>Info job posting dan kesempatan kolaborasi proyek</p>
                 </div>
               </li>
               <li>
-                <span class="benefit-icon">🏆</span>
+                <span class="benefit-icon"></span>
                 <div>
                   <strong>Kompetisi</strong>
                   <p>Hackathon dan coding challenge dengan hadiah menarik</p>
@@ -214,7 +214,7 @@
   <footer class="tc-footer">
     <div class="container text-center">
       <p class="mb-1"><span class="brand-icon">⬡</span> Tech<span class="accent">Community</span></p>
-      <p class="footer-sub">© 2026 TechCommunity. Dibuat dengan ❤️ untuk komunitas Indonesia.</p>
+      <p class="footer-sub">© 2026 TechCommunity. Dibuat dengan  untuk komunitas Indonesia.</p>
     </div>
   </footer>
 
@@ -309,10 +309,10 @@
         document.getElementById('successCard').classList.remove('d-none');
 
         document.getElementById('successData').innerHTML = `
-          <div class="success-row"><span>👤 Nama</span><strong>${name}</strong></div>
-          <div class="success-row"><span>📧 Email</span><strong>${email}</strong></div>
-          <div class="success-row"><span>💡 Minat</span><strong>${interest}</strong></div>
-          <div class="success-row"><span>🕐 Waktu</span><strong>${now}</strong></div>
+          <div class="success-row"><span> Nama</span><strong>${name}</strong></div>
+          <div class="success-row"><span> Email</span><strong>${email}</strong></div>
+          <div class="success-row"><span> Minat</span><strong>${interest}</strong></div>
+          <div class="success-row"><span> Waktu</span><strong>${now}</strong></div>
         `;
 
         // Update log table
